@@ -59,6 +59,7 @@
     "Gitlab",
     "Github"
   ],
+  "use_prometheus", "n",
   "keep_local_envs_in_vcs": "y",
   "debug": "n"
 }
