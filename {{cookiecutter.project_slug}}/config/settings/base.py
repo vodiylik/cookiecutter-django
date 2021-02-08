@@ -82,6 +82,9 @@ THIRD_PARTY_APPS = [
     "rest_framework.authtoken",
     "corsheaders",
 {%- endif %}
+{%- if cookiecutter.use_prometheus == 'y' -%}
+    "django_prometheus",
+{% endif %}
 ]
 
 LOCAL_APPS = [
