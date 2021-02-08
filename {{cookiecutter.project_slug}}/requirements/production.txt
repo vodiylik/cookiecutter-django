@@ -13,6 +13,9 @@ sentry-sdk==0.19.5  # https://github.com/getsentry/sentry-python
 {%- if cookiecutter.use_docker == "n" and cookiecutter.windows == "y" %}
 hiredis==1.1.0  # https://github.com/redis/hiredis-py
 {%- endif %}
+{%- if cookiecutter.use_prometheus == "y" %}
+django-prometheus  # https://github.com/korfuri/django-prometheus
+{%- endif %}
 
 # Django
 # ------------------------------------------------------------------------------
