@@ -37,6 +37,13 @@ urlpatterns += [
     path("auth-token/", obtain_auth_token),
 ]
 {%- endif %}
+{% if cookiecutter.use_prometheus == 'y' %}
+# PROMETHEUS EXPORTER
+urlpatterns += [
+    # /metrics url
+    path("", include("django_prometheus.urls")),
+]
+{%- endif %}
 
 if settings.DEBUG:
     # This allows the error pages to be debugged during development, just visit
