@@ -262,12 +262,6 @@ COMPRESS_FILTERS = {
 # https://github.com/antonagestam/collectfast#installation
 INSTALLED_APPS = ["collectfast"] + INSTALLED_APPS  # noqa F405
 {% endif %}
-{%- if cookiecutter.use_prometheus == 'y' -%}
-# Django Prometheus
-# ------------------------------------------------------------------------------
-# https://github.com/korfuri/django-prometheus#installation
-INSTALLED_APPS = ["django_prometheus"] + INSTALLED_APPS  # noqa F405
-{% endif %}
 # LOGGING
 # ------------------------------------------------------------------------------
 # https://docs.djangoproject.com/en/dev/ref/settings/#logging
